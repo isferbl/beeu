@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>BeeU - Home</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="home-page">
+
+    <div class="home-shell">
+        <!-- HEADER SUPERIOR -->
+        <header class="home-header">
+            <div class="home-logo-badge">
+                <a href="#"><img src="img/Logo.png" alt="BeeU" /></a>
+            </div>
+
+            <div class="home-header-icon">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+        </header>
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="home-main">
+<section class="pull-to-refresh">
+    <div class="spinner-border" role="status">
+    </div>
+</section>
+            <!-- BUSCADOR + TABS -->
+            <section class="home-search-section">
+                <div class="home-search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Buscar proyectos, personas…" />
+                </div>
+
+                <div class="home-category-tabs">
+                    <button class="tab-pill tab-pill-active">Todos</button>
+                    <button class="tab-pill">Ilustraciones</button>
+                    <button class="tab-pill">Animación 2D/3D</button>
+                    <button class="tab-pill">Diseño web</button>
+                </div>
+            </section>
+
+            <!-- NUEVOS PROYECTOS -->
+            <section class="home-section">
+                <div class="home-section-header">
+                    <h2 class="home-section-title">Nuevos proyectos</h2>
+                    <a href="#" class="home-section-link">Ver más</a>
+                </div>
+
+                <div class="home-projects-grid carousel-row">
+                    <!-- Card 1 -->
+                    <article class="project-card">
+                        <div class="project-thumb">
+                            <img src="img/Motioncraft.png" alt="MotionCraft" />
+                            <span class="project-emoji">🔥</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">MotionCraft</h3>
+                            <p class="project-text">
+                                Realidad Virtual (VR) y Realidad Aumentada (AR).
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="project-card">
+                        <div class="project-thumb">
+                            <img src="img/Lumeo.png" alt="Lumeo" />
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Lumeo</h3>
+                            <p class="project-text">
+                                Sincroniza la iluminación con la música o el ritmo.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PROYECTOS EN VOTACIÓN -->
+            <section class="home-section">
+                <div class="home-section-header">
+                    <h2 class="home-section-title">Proyectos en votación</h2>
+                    <a href="#" class="home-section-link">Ver más</a>
+                </div>
+
+                <div class="home-projects-grid voting-grid carousel-row">
+                    <!-- Card 1 -->
+                    <article class="project-card voting-card">
+                        <div class="project-thumb">
+                            <img src="img/Neopixel_Grande.png" alt="Velum" />
+                            <div class="project-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Velum</h3>
+                            <p class="project-subtext">40/100 han votado</p>
+                            <div class="project-progress">
+                                <div class="project-progress-fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="project-card voting-card">
+                        <div class="project-thumb">
+                            <img src="img/CIyra_Grande.png" alt="Clyra" />
+                            <div class="project-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Clyra</h3>
+                            <p class="project-subtext">90/100 han votado</p>
+                            <div class="project-progress">
+                                <div class="project-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="project-card voting-card">
+                        <div class="project-thumb">
+                            <img src="img/Luminary_Grande.png" alt="Luminary" />
+                            <div class="project-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Luminary</h3>
+                            <p class="project-subtext">20/100 han votado</p>
+                            <div class="project-progress">
+                                <div class="project-progress-fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- TE ESTAMOS BUSCANDO -->
+            <section class="home-section">
+                <h2 class="home-section-title mb-3">Te estamos buscando</h2>
+
+                <div class="home-opportunities-grid carousel-row">
+                    <!-- Card 1 -->
+                    <article class="opportunity-card">
+                        <div class="opportunity-thumb">
+                            <img src="img/Neopixel_Grande.png" alt="NeoPixels" />
+                        </div>
+                        <div class="opportunity-body">
+                            <h3 class="opportunity-title">NeoPixels</h3>
+                            <p class="opportunity-text">
+                                Lienzo interactivo donde pueden pintar patrones de luz con un control remoto.
+                            </p>
+                            <p class="opportunity-subtitle">En busca de Director VR</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="opportunity-card">
+                        <div class="opportunity-thumb">
+                            <img src="img/Looma.png" alt="Looma" />
+                        </div>
+                        <div class="opportunity-body">
+                            <h3 class="opportunity-title">Looma</h3>
+                            <p class="opportunity-text">
+                                Plataforma social para crear e intercambiar contenido visual (ilustraciones,
+                                animaciones, etc.).
+                            </p>
+                            <p class="opportunity-subtitle">En busca de Diseñador UX</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PERFILES NUEVOS -->
+            <section class="home-section mb-5">
+                <h2 class="home-section-title mb-3">Perfiles nuevos</h2>
+
+                <!-- Filtros -->
+                <div class="profiles-filters">
+                    <button class="chip chip-active">Ilustrador</button>
+                    <button class="chip">Animador 2D/3D</button>
+                    <button class="chip">Diseñador Web</button>
+                </div>
+
+                <!-- Lista de perfiles -->
+                <div class="profiles-list">
+                    <!-- Milton -->
+                    <article class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="img/Milton_Sosa.png" alt="Milton Rosa" />
+                        </div>
+
+                        <div class="profile-info">
+                            <h3 class="profile-name">Milton Rosa</h3>
+                            <p class="profile-caption">Proyectos en que ha participado</p>
+                            <div class="profile-tags">
+                                <span class="profile-tag">Infinite Loop</span>
+                                <span class="profile-tag">Ethereal</span>
+                            </div>
+                        </div>
+
+                        <button class="profile-add-btn">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </button>
+                    </article>
+
+                    <!-- Humberto -->
+                    <article class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="img/Humberto_R.png" alt="Humberto R." />
+                        </div>
+
+                        <div class="profile-info">
+                            <h3 class="profile-name">Humberto R.</h3>
+                            <p class="profile-caption">Proyectos en que ha participado</p>
+                            <div class="profile-tags">
+                                <span class="profile-tag">OrbitInteractive</span>
+                            </div>
+                        </div>
+
+                        <button class="profile-add-btn">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </button>
+                    </article>
+
+                    <!-- Norma -->
+                    <article class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="img/Norma_Cruz.png" alt="Norma Cruz" />
+                        </div>
+
+                        <div class="profile-info">
+                            <h3 class="profile-name">Norma Cruz</h3>
+                            <p class="profile-caption">Proyectos en que ha participado</p>
+                            <div class="profile-tags">
+                                <span class="profile-tag">Spatia</span>
+                                <span class="profile-tag">Velum</span>
+                                <span class="profile-tag">Interaktiva</span>
+                            </div>
+                        </div>
+
+                        <button class="profile-add-btn">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- NAV INFERIOR -->
+        <nav class="home-bottom-nav">
+            <a href="#" class="bottom-nav-item active">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="#" class="bottom-nav-item">
+                <i class="fa-regular fa-folder-open"></i>
+            </a>
+            <a href="#" class="bottom-nav-item">
+                <i class="fa-regular fa-comment-dots"></i>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/pull-to-refresh.js"></script>
+</body>
+
+</html>

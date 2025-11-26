@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>BeeU - Habilidades</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="skills-page">
+
+    <div class="login-container">
+
+      
+        <div class="header-skills-page d-flex justify-content-end align-items-center px-3 pt-3">
+            <a href="#" class="btn-skip">
+                Omitir <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="form-section pt-4">
+
+            <h1 class="section-title">
+                ¿Qué puedes aportar al equipo o proyecto?
+            </h1>
+
+            <p class="section-subtitle">
+                Selecciona uno o más
+            </p>
+
+            <div id="skills-container" class="skills-grid">
+                <button type="button" class="skill-tag">Storytelling</button>
+                <button type="button" class="skill-tag">Diseño UX/UI</button>
+                <button type="button" class="skill-tag">Modelado 3D</button>
+                <button type="button" class="skill-tag">Arte Conceptual</button>
+                <button type="button" class="skill-tag">Texturizado 3D</button>
+                <button type="button" class="skill-tag">Branding</button>
+                <button type="button" class="skill-tag">Storyboarding</button>
+                <button type="button" class="skill-tag">Animación 2D</button>
+                <button type="button" class="skill-tag">Motion Graphics</button>
+                <button type="button" class="skill-tag">Rigging</button>
+                <button type="button" class="skill-tag">Animación 3D</button>
+                <button type="button" class="skill-tag">Lighting</button>
+                <button type="button" class="skill-tag">Edición de video</button>
+                <button type="button" class="skill-tag">Edición de audio</button>
+                <button type="button" class="skill-tag">Scripting</button>
+                <button type="button" class="skill-tag">Ilustración</button>
+            </div>
+
+            <button type="button" class="btn app-btn btn-primary w-100 mb-3 btn-continue">
+                Continuar
+            </button>
+
+        </div>
+
+       
+
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const skillTags = document.querySelectorAll(".skill-tag");
+
+            skillTags.forEach(tag => {
+                tag.addEventListener("click", () => {
+                    tag.classList.toggle("selected");
+                });
+            });
+
+            document.querySelector(".btn-continue").addEventListener("click", () => {
+                window.location.href = "skills.html";
+            });
+
+            document.querySelector(".btn-skip").addEventListener("click", () => {
+                window.location.href = "skills.html";
+            });
+        });
+    </script>
+
+</body>
+</html>
