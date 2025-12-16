@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --amarillo: #F9B233;
+    --naranja: #F36E21;
+    --morado: #A359E0;
+    --morado-claro: #8c4ad0;
+    --gris: #444444;
+    --gris-borde: #DDDDDD;
+    --background: #F8F6FF;
+    --blanco: #FFFFFF;
+    --morado-oscuro: #5c00a3;
+    --lila-claro-fondo: #f8f6fb;
+    --rojo-peligro: #E0354B;
+
+    --h1: 34px;
+    --body: 16px;
+    --small: 14px;
+}
+
+/* General */
+body {
+    background-color: var(--background);
+    font-family: 'Albert Sans', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--h1);
+    font-weight: 700;
+}
+
+p, span, a {
+    font-size: var(--body);
+}
+
+/* Botones */
+.app-btn {
+    text-decoration: none;
+    background-color: var(--lila-claro-fondo);
+    color: var(--gris);
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: var(--body);
+    transition: background-color 0.2s, color 0.2s;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-btn:hover {
+    background-color: var(--morado-claro);
+    color: var(--blanco);
+}
+
+.app-btn .fa-angle-right {
+    color: var(--morado);
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.app-btn:hover .fa-angle-right {
+    color: var(--blanco);
+}
+
+/* Botón cerrar sesión */
+.agregar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: var(--rojo-peligro);
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: var(--body);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.agregar-wrapper .fa-arrow-right-to-bracket {
+    font-size: 18px;
+}
+
+/* Modal Cerrar Sesión */
+.modal-cerrar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-cerrar.active {
+    display: flex;
+}
+
+.modal-cerrar .modal-box {
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-cerrar .modal-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.modal-cerrar .modal-actions button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-cerrar .btn-aceptar {
+    background-color: var(--rojo-peligro);
+    color: var(--blanco);
+}
+
+.modal-cerrar .btn-cancelar {
+    background-color: var(--morado-oscuro);
+    color: var(--blanco);
+}
+
+.modal-cerrar .modal-divider {
+    width: 1px;
+    height: 30px;
+    background: #ccc;
+}
+
+/* Layout Home */
+.home-page {
+    background-color: var(--amarillo);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.home-shell {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--blanco);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Header */
+.home-header {
+    background: var(--amarillo);
+    padding: 18px 18px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 400px;
+    width: 100%;
+    z-index: 200;
+}
+
+.home-logo-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-logo-badge img {
+    max-width: 20px;
+}
+
+.home-header-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.home-header-icon a{
+    color: var(--blanco);
+}
+
+/* Contenido principal */
+#configuracion {
+    padding: 85px 18px 20px;
+}
+
+#cerrar {
+    padding: 20px 18px 80px;
+}
+
+#configuracion h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gris);
+    margin-bottom: 25px;
+}
+
+/* Nav inferior */
+.home-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 400px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--amarillo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20;
+}
+
+.bottom-nav-item {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+}
+
+.bottom-nav-item.active {
+    color: var(--blanco);
+}

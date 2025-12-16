@@ -1,0 +1,160 @@
+.header-pattern {
+    background-image: url('../img/Patron_login.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    position: relative;
+}
+
+/* ========================
+   SECCIÓN DE FORMULARIO
+   ======================== */
+.form-section {
+    padding: 30px;
+    padding-top: 0;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: var(--small);
+    opacity: 1;
+}
+
+/*
+ * 5. COMPONENTES: CAMPOS DE FORMULARIO (Inputs)
+ */
+.app-input {
+    border: 2px solid var(--morado);
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: var(--body);
+}
+
+.app-input:focus {
+    border-color: var(--morado);
+    box-shadow: 0 0 0 0.15rem rgba(163, 89, 224, 0.25);
+}
+
+/* Contenedor del ícono de ojo */
+.input-with-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--morado) !important;
+    cursor: pointer;
+    z-index: 99;
+}
+
+/*
+ * 8. VERIFICAR IDENTIDAD 
+ */
+.verification-instruction {
+    font-size: var(--body);
+    color: var(--gris);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.verification-code-container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.code-input {
+    width: 45px;
+    height: 55px;
+    text-align: center;
+    font-weight: 700;
+    background-color: var(--amarillo) !important;
+    color: var(--blanco) !important;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: none !important;
+}
+
+.code-input:focus {
+    background-color: var(--amarillo) !important;
+    color: var(--blanco) !important;
+    box-shadow: 0 0 0 2px var(--naranja);
+}
+
+.resend-code-text {
+    font-size: var(--small);
+    color: var(--gris);
+    text-align: center;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.resend-link {
+    font-weight: 600;
+    font-size: var(--small);
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--morado-oscuro);
+}
+
+/*
+ * 10. OLVIDASTE TU CONTRASEÑA
+ */
+.forgot-password-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.forgot-password-link {
+    font-size: var(--small);
+    color: var(--morado);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Ocultar flecha solo en la pantalla de login */
+.login-page .back-button {
+    display: none;
+}
+
+.back-button:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* BOTÓN OMITIR*/
+.btn-skip {
+    background-color: var(--morado);
+    border: 2px solid var(--morado);
+    color: var(--blanco);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: var(--small);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-skip:hover {
+    background-color: var(--morado-claro);
+    color: var(--blanco);
+}
+
+.register-text{
+    font-size: var(--small);
+}

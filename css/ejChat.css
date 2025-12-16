@@ -1,0 +1,158 @@
+:root {
+    --amarillo: #F9B233;
+    --naranja: #F36E21;
+    --morado: #A359E0;
+    --morado-claro: #8c4ad0;
+    --gris: #444444;
+    --gris-borde: #DDDDDD;
+    --background: #F8F6FF; 
+    --blanco: #FFFFFF;
+    --morado-oscuro: #7835b0; 
+
+    --h1: 34px;
+    --body: 16px;
+    --small: 14px;
+}
+
+body{
+	background-color: rgb(238, 238, 238) !important;
+	font-family: 'Albert Sans', sans-serif;
+}
+
+#chat{
+	margin: 10px;
+}
+
+.input{
+	margin: 5px 0px;
+	padding: 0px -2px;
+	font-size: 16px;
+	border-radius: 5px;
+	border-color: aliceblue;
+}
+
+input:focus{
+	outline: none;
+}
+
+ /*Donde esta el icono del usuario, el input y el boton de enviar.*/
+.barra{
+	padding: 9px 4px;
+	text-align: center;
+	background-color: rgb(167, 187, 199);
+	margin-bottom: 30px;
+	border-radius: 15px;
+}
+
+.userImg{
+	width: 8vw !important;
+	border-radius: 100%;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+#talk{
+	width: 76%;
+	height: 4vh;
+	font-size: 14px;
+	border-radius: 7px;
+	border-width: 0;
+}
+
+/*El espacio donde aparecen los mensajes de texto.*/
+.chatSpace{
+	height: 83vh;
+	margin: 3px;
+	overflow-x: hidden;
+	overflow-y: auto; /*Todo el contenido va a estar dentro del tamaño de este espacio.*/
+	border: 4px;
+	border-radius: 30px;
+	background-color: rgb(245, 245, 245);
+	text-align: right; /*Porque solamente se va a ver los mensajes que enviamos.*/
+}
+.profileItems{
+	padding-right: 1vw;
+}
+
+/*Para alinear las columnas.*/
+#chatText{
+	display: grid;
+	justify-items: end;
+}
+
+#chatText div{
+	margin-top: 1vh;
+}
+
+#chatText div .said{
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 4px 3px rgb(197, 197, 197);
+	margin-left: 1vw;
+	padding: 7px 7px 7px 4px;
+	max-width: 79%; /*Ancho maximo de la caja de texto, puede variar dependiendo del tamaño de la pantalla del celular*/
+
+}
+
+.send{
+	font-size: 150%; /* Para que sea "responsive", pero puede ser un num. fijo. */
+	padding: 0px 6px; /*Mayor area para tocar el icono*/
+	color: #7835b0;
+}
+.send:active{
+	color: #A359E0;
+}
+
+.back{
+	color: white;
+}
+
+/*Los tamaños de los elementos nuevos y las delimitaciones.*/
+.newItem{
+	margin-bottom: 5px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#userName{
+	font-size: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: grey;
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+
+ /* ancho de barra de scroll*/
+ ::-webkit-scrollbar {
+	width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+	background: #8c4ad0;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #A359E0;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(238, 196, 196);
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    background-color: #7835b0;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.chat-header .chat-name {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}

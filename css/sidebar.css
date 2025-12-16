@@ -1,0 +1,164 @@
+/* =================================================== */
+/* 1. CONTENEDOR PRINCIPAL (SIDE-DRAWER) */
+/* =================================================== */
+
+.side-drawer {
+    /* Posicionamiento fijo centrado al ancho del "teléfono" (max-width: 400px) */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centra el elemento en la vista móvil */
+    width: 100%;
+    max-width: 400px;
+    /* Limita el ancho al contenedor de la aplicación */
+    height: 100vh;
+    z-index: 9999;
+    /* Asegura que esté por encima de todo */
+
+    /* ESTADO CERRADO: Impide la interacción */
+    pointer-events: none;
+}
+
+/* =================================================== */
+/* 2. OVERLAY (Capa Oscura Detrás del Panel) */
+/* =================================================== */
+
+.side-drawer .side-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+
+    /* Estado inicial: Oculto */
+    opacity: 0;
+    pointer-events: none;
+    /* Inactivo por defecto */
+    transition: opacity .2s ease;
+}
+
+/* =================================================== */
+/* 3. PANEL (El Menú que se Desliza) */
+/* =================================================== */
+
+.side-drawer .side-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 78%;
+    max-width: 320px;
+    background: var(--morado);
+    color: var(--blanco);
+    border-radius: 0 18px 18px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    /* ESTADO CERRADO: Mueve el panel fuera de la vista */
+    transform: translateX(-105%);
+    transition: transform .25s ease;
+}
+
+/* =================================================== */
+/* 4. ESTADO ABIERTO (Clase JavaScript: .is-open) */
+/* =================================================== */
+
+/* 1. Cuando el contenedor principal tiene la clase 'is-open' */
+.side-drawer.is-open {
+    pointer-events: auto;
+    /* Activamos la interacción en todo el contenedor */
+}
+
+/* 2. Mostrar el Overlay */
+.side-drawer.is-open .side-overlay {
+    opacity: 1;
+    pointer-events: auto;
+    /* El overlay puede recibir clics para cerrar */
+}
+
+/* 3. Mostrar el Panel (Slide In) */
+.side-drawer.is-open .side-panel {
+    transform: translateX(0);
+    /* Lo deslizamos a la posición visible */
+}
+
+/* =================================================== */
+/* 5. CONTENIDO INTERNO DEL PANEL (Se mantuvo tu estructura) */
+/* =================================================== */
+
+.side-profile {
+    padding: 18px 16px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+.side-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .25);
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.side-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side-name {
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.side-mail {
+    font-size: 13px;
+    opacity: .9;
+}
+
+.side-menu {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.side-item {
+    padding: 12px 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.side-item i{
+    padding-right: 10px;
+}
+
+.side-logout i {
+    padding-right: 10px;
+}
+
+.side-item:hover {
+    background: rgba(255, 255, 255, .16);
+}
+
+.side-footer {
+    margin-top: auto;
+    padding: 12px 12px 16px;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+}
+
+.side-logout {
+    display: block;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.side-logout:hover {
+    background: rgba(255, 255, 255, .16);
+}
