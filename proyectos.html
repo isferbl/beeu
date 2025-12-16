@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>BeeU - Proyectos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/sidebar.css" /> 
+    <link rel="stylesheet" href="css/configuracion.css">
+</head>
+
+<body class="home-page">
+
+    <div class="home-shell">
+        <header class="home-header">
+            <div class="home-logo-badge">
+                <a href="#" class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Abrir menú lateral">
+                    <img src="img/Logo.png" alt="BeeU" />
+                </a>
+            </div>
+
+            <div class="home-header-icon" aria-label="Notificaciones">
+                <a href="notificaciones.html"><i class="fa-regular fa-bell"></i></a>
+            </div>
+        </header>
+
+        <aside id="mySidebar" class="side-drawer" aria-label="Menú lateral" aria-hidden="true">
+            <div class="side-overlay" id="myOverlay" aria-label="Cerrar menú"></div>
+            <div class="side-panel">
+                <div class="side-profile">
+                    <a href="perfil1.html"> 
+                    <div class="side-avatar">
+                        <img src="img/Foto_Perfil.png" alt="Avatar" />
+                    </div></a>
+                    <div class="side-user">
+                        <div class="side-name">Isabela Altara</div>
+                        <div class="side-mail">isabelaltara@gmail.com</div>
+                    </div>
+                </div>
+                <nav class="side-menu">
+                    <a class="side-item" href="configuracion.html">
+                        <i class="fa-solid fa-gear"></i><span>Configuración</span>
+                    </a>
+                    <a class="side-item" href="proyectos.html">
+                        <i class="fa-regular fa-folder"></i><span>Proyectos</span>
+                    </a>
+                    <a class="side-item" href="favoritos.html">
+                        <i class="fa-regular fa-heart"></i><span>Favoritos</span>
+                    </a>
+                </nav>
+                <div class="side-footer">
+                    <a class="side-logout" href="login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i><span>Cerrar Sesión</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="home-main" style="flex-grow: 1; overflow-y: auto; padding-top: 50px; padding-bottom: 60px; background-color: var(--blanco);">
+            
+                <div class="projects-header">
+                    <h1>Mis proyectos</h1>
+                    <p class="subtitle">Mira tu avance y el de tu equipo</p>
+                </div>
+
+<!-- MODAL COMPARTIR -->
+<div class="modal-cerrar" id="modalCompartir">
+    <div class="modal-box">
+        <h2>Compartir</h2>
+        <p>¿Deseas compartir este contenido?</p>
+        <div class="modal-actions">
+            <a href="ChatEjemplo.html"><button class="btn-aceptar" id="aceptarCompartir"
+                    style="background-color: var(--naranja)">DM</button></a>
+            <span class="modal-divider"></span>
+            <button class="btn-cancelar" id="cerrarCompartir">Copiar link</button>
+        </div>
+    </div>
+</div>
+
+            <div>
+                <article class="project-card-full-width">
+                    <h2 class="project-title">Animatic "Rose"</h2>
+                    <div class="project-meta-info">
+                        <p>Postulaciones: Abierto</p>
+                        <p>Solicitudes recibidas: 4</p>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="circle-progress" 
+                            data-progress="25" 
+                            style="--progress: 100; --progress-purple: 25;"> 
+                            <span class="progress-percent">25%</span>
+                        </div>
+                        
+                        <div class="recent-activity">
+                            <h3 class="activity-title">Actividad reciente</h3>
+                            <ul>
+                                <li>Juan completó Storyboards</li>
+                                <li>Lisa inició Entintado</li>
+                                <li>Solicitud recibida para Pintor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card-full-width mt-4">
+                    <h2 class="project-title">Diseño web "Gucci"</h2>
+                    <div class="project-meta-info">
+                        <p>Postulaciones: Abierto</p>
+                        <p>Solicitudes recibidas: 4</p>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="circle-progress" 
+                            data-progress="50" 
+                            style="--progress: 100; --progress-purple: 50;"> 
+                            <span class="progress-percent">50%</span>
+                        </div>
+
+                        <div class="recent-activity">
+                            <h3 class="activity-title">Actividad reciente</h3>
+                            <ul>
+                                <li>Juan completó Wireframes</li>
+                                <li>Lisa inició Prototipado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <div class="create-project-btn-container mt-4 pb-5">
+                    <button class="app-btn create-project-btn">Crear proyecto</button>
+                </div>
+            </div>
+
+        </main>
+        
+               <!-- NAV INFERIOR, copiar en todas las pantallas-->
+        <nav class="home-bottom-nav">
+            <a href="home.html" class="bottom-nav-item active">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="proyectos.html" class="bottom-nav-item">
+                <i class="fa-regular fa-folder-open"></i>
+            </a>
+            <a href="chats.html" class="bottom-nav-item">
+                <i class="fa-regular fa-comment-dots"></i>
+            </a>
+        </nav>
+    </div>
+
+    <!--copiar en todas las pantallas-->
+    <script src="js/pull-to-refresh.js"></script>
+    <script src="js/tabfuncional.js"></script>
+    <script src="js/sidebar.js" defer></script>
+    <script>
+        function goToProfile(){
+            window.location.replace("perfil.html")
+        }
+
+    </script>
+
+    <script>
+        const modalCompartir = document.getElementById("modalCompartir");
+        const btnAbrirCompartir = document.getElementById("abrirCompartir");
+        const btnCerrarCompartir = document.getElementById("cerrarCompartir");
+        const btnAceptarCompartir = document.getElementById("aceptarCompartir");
+
+        btnAbrirCompartir.addEventListener("click", () => {
+            modalCompartir.classList.add("active");
+        });
+
+        btnCerrarCompartir.addEventListener("click", () => {
+            modalCompartir.classList.remove("active");
+        });
+
+        modalCompartir.addEventListener("click", (e) => {
+            if (e.target === modalCompartir) {
+                modalCompartir.classList.remove("active");
+            }
+        });
+
+        btnAceptarCompartir.addEventListener("click", () => {
+            modalCompartir.classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>

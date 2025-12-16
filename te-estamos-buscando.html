@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>BeeU - Te estamos buscando</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/sidebar.css" /> 
+</head>
+
+<body class="home-page">
+
+    <div class="home-shell">
+        <header class="home-header">
+            <div class="home-logo-badge">
+                <a href="#" class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Abrir menú lateral">
+                    <img src="img/Logo.png" alt="BeeU" />
+                </a>
+            </div>
+
+            <div class="home-header-icon" aria-label="Notificaciones">
+                <a href="notificaciones.html"><i class="fa-regular fa-bell"></i></a>
+            </div>
+        </header>
+
+        <aside id="mySidebar" class="side-drawer" aria-label="Menú lateral" aria-hidden="true">
+            <div class="side-overlay" id="myOverlay" aria-label="Cerrar menú"></div>
+            <div class="side-panel">
+                <div class="side-profile">
+                    <a href="perfil1.html"> 
+                    <div class="side-avatar">
+                        <img src="img/Foto_Perfil.png" alt="Avatar" />
+                    </div>
+						</a>
+                    <div class="side-user">
+                        <div class="side-name">Isabela Altara</div>
+                        <div class="side-mail">isabelaltara@gmail.com</div>
+                    </div>
+                </div>
+                <nav class="side-menu">
+                    <a class="side-item" href="configuracion.html">
+                        <i class="fa-solid fa-gear"></i><span>Configuración</span>
+                    </a>
+                    <a class="side-item" href="proyectos.html">
+                        <i class="fa-regular fa-folder"></i><span>Proyectos</span>
+                    </a>
+                    <a class="side-item" href="favoritos.html">
+                        <i class="fa-regular fa-heart"></i><span>Favoritos</span>
+                    </a>
+                </nav>
+                <div class="side-footer">
+                    <a class="side-logout" href="login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i><span>Cerrar Sesión</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        
+        <main class="home-main" style="flex-grow: 1; overflow-y: auto; padding-top: 50px; padding-bottom: 60px;">
+            
+            <section class="pull-to-refresh">
+                <div class="spinner-border" role="status">
+                </div>
+            </section>
+            
+            <div class="project-title d-flex align-items-center mb-3 pt-2" style="padding-left: 15px; padding-right: 15px;">
+                <a href="testamosbuscando2.html"><i class="fa-solid fa-chevron-left me-3"></i></a>
+                <h1 class="m-0">NeoPixels</h1> 
+            </div>
+            
+            <section class="row project-card-info" style="padding: 0 15px;">
+                <article align="center">
+                    <img src="img/Neopixel_Grande.png" alt="velum" width="320" class="pb-2 img-fluid" style="max-width: 100%;">
+                    <p align="left">El lienzo es una superficie especial, diseñada con materiales sensibles y reactivos a comandos digitales, que puede generar patrones de luz, colores y efectos dinámicos en tiempo real. Funciona en sincronía con un control remoto o una aplicación móvil, permitiendo al usuario personalizar su experiencia de interacción.</p>
+                </article>
+            </section>
+            
+            <section class="home-section acciones-proyecto project-card-info d-flex justify-content-around py-3" style="padding: 0 15px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+                <div class="accion-item accion-item-blue text-center" data-action="like">
+					<i class="fa-solid fa-thumbs-up"></i>
+					<span>Me gusta</span>
+				</div>
+
+                <div class="accion-separador" style="border-right: 1px solid #ccc;"></div>
+
+                <div class="accion-item accion-item-blue text-center" data-action="save">
+					<i class="fa-solid fa-bookmark"></i>
+					<span>Guardar</span>
+				</div>
+
+                <div class="accion-separador" style="border-right: 1px solid #ccc;"></div>
+
+				<div class="accion-item text-center" id="abrirCompartir">
+					<i class="fa-solid fa-share-nodes"></i>
+					<span>Compartir</span>
+				</div>
+
+            </section>
+			
+			
+			
+						<!-- MODAL COMPARTIR -->
+			<div class="modal-cerrar" id="modalCompartir">
+				<div class="modal-box">
+					<h2>Compartir</h2>
+					<p>¿Deseas compartir este contenido?</p>
+					<div class="modal-actions">
+						<a href="ChatEjemplo.html"><button class="btn-aceptar" id="aceptarCompartir" style="background-color: var(--naranja)">DM</button></a>
+						 <span class="modal-divider"></span>
+						<button class="btn-cancelar" id="cerrarCompartir">Copiar link</button>
+					</div>
+				</div>
+			</div>
+
+
+
+			
+			
+            <section class="home-section project-card-info mt-4" style="padding: 0 15px;">
+                <h3 class="home-section-title">Postulaciones abiertas</h3>
+
+                <div class="tags-wrapper d-flex flex-wrap gap-2">
+                    <span class="tag-morado" style="background-color: #8a2be2; color: white; padding: 5px 10px; border-radius: 15px;">Director VR</span>
+                    <span class="tag-morado" style="background-color: #8a2be2; color: white; padding: 5px 10px; border-radius: 15px;">Animador 3D</span>
+                </div>
+            </section>
+
+            <section class="home-section project-card-info mt-4" style="padding: 0 15px;">
+                <h3 class="home-section-title">Habilidades requeridas</h3>
+
+                <div class="tags-wrapper d-flex flex-wrap gap-2">
+                    <span class="tag-morado" style="background-color: #8a2be2; color: white; padding: 5px 10px; border-radius: 15px;">Modelado 3D</span>
+                    <span class="tag-morado" style="background-color: #8a2be2; color: white; padding: 5px 10px; border-radius: 15px;">Programación</span>
+                    <span class="tag-morado" style="background-color: #8a2be2; color: white; padding: 5px 10px; border-radius: 15px;">UX/UI</span>
+                    <span class="tag-morado" style="background-color: #8a2be2; color: white; padding: 5px 10px; border-radius: 15px;">Realidad virtual y aumentada</span>
+                    <span class="tag-morado" style="background-color: #8a2be2; color: white; padding: 5px 10px; border-radius: 15px;">Gestión de proyectos</span>
+                </div>
+            </section>
+            
+            <section id="habilidades" class="row project-card-info mt-4" style="padding: 0 15px;">
+                <article>
+                    <p>Experiencia en la creación de entornos y experiencias en VR/AR, incluyendo dispositivos como Oculus, HTC Vive, y Hololens.</p>
+                    <p>Conocimiento en herramientas como Maya, Blender, Unity, Unreal Engine, y técnicas de texturizado y rigging.</p>
+                    <p>Habilidad para entender y trabajar con lenguajes como C#, C++, Python o JavaScript, especialmente en entornos de motores de VR como Unity o Unreal Engine.</p>
+                    <p>Comprender los principios de UX/UI aplicados a experiencias inmersivas.</p>
+                </article>
+            </section>
+            
+            <section id="fecha" class="row project-card-info mt-4" style="padding: 0 15px;">
+                <article>
+                    <h2>Fecha límite para postularse</h2>
+                    <p>Lunes 25 de noviembre de 2025</p>
+                </article>
+            </section>
+            
+            <div class="d-grid gap-2" style="padding: 0 15px;">
+                 <a href="nuevoproyecto.html" class="btn app-btn btn-primary w-100 mb-3">
+                Postularme
+                </a>
+            </div>
+            
+            <div style="height: 20px;"></div> </main>
+        
+     <!-- NAV INFERIOR, copiar en todas las pantallas-->
+        <nav class="home-bottom-nav">
+            <a href="home.html" class="bottom-nav-item active">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="proyectos.html" class="bottom-nav-item">
+                <i class="fa-regular fa-folder-open"></i>
+            </a>
+            <a href="chats.html" class="bottom-nav-item">
+                <i class="fa-regular fa-comment-dots"></i>
+            </a>
+        </nav>
+    </div>
+
+    <!--copiar en todas las pantallas-->
+    <script src="js/pull-to-refresh.js"></script>
+    <script src="js/tabfuncional.js"></script>
+    <script src="js/sidebar.js" defer></script>
+    <script>
+        function goToProfile(){
+            window.location.replace("perfil.html")
+        }
+
+    </script>
+	<script>
+const modalCompartir = document.getElementById("modalCompartir");
+const btnAbrirCompartir = document.getElementById("abrirCompartir");
+const btnCerrarCompartir = document.getElementById("cerrarCompartir");
+const btnAceptarCompartir = document.getElementById("aceptarCompartir");
+
+btnAbrirCompartir.addEventListener("click", () => {
+    modalCompartir.classList.add("active");
+});
+
+btnCerrarCompartir.addEventListener("click", () => {
+    modalCompartir.classList.remove("active");
+});
+
+modalCompartir.addEventListener("click", (e) => {
+    if (e.target === modalCompartir) {
+        modalCompartir.classList.remove("active");
+    }
+});
+
+btnAceptarCompartir.addEventListener("click", () => {
+    modalCompartir.classList.remove("active");
+});
+</script>
+<script>
+document.querySelectorAll(".accion-item-blue").forEach(item => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("active");
+    });
+});
+</script>
+
+
+</body>
+
+</html>

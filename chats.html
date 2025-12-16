@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>BeeU - Chats</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/chats.css" /> 
+    <link rel="stylesheet" href="css/sidebar.css" /> 
+</head>
+
+<body class="home-page">
+
+    <div class="home-shell">
+        <header class="home-header">
+            <div class="home-logo-badge">
+                <a href="#" class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Abrir menú lateral">
+                    <img src="img/Logo.png" alt="BeeU" />
+                </a>
+            </div>
+
+            <div class="home-header-icon" aria-label="Notificaciones">
+                <a href="notificaciones.html"><i class="fa-regular fa-bell"></i></a>
+            </div>
+        </header>
+
+        <aside id="mySidebar" class="side-drawer" aria-label="Menú lateral" aria-hidden="true">
+            <div class="side-overlay" id="myOverlay" aria-label="Cerrar menú"></div>
+            <div class="side-panel">
+                <div class="side-profile">
+                    <a href="perfil1.html">
+                    <div class="side-avatar">
+                        <img src="img/Foto_Perfil.png" alt="Avatar" />
+                    </div>
+                </a> 
+                    <div class="side-user">
+                        <div class="side-name">Isabela Altara</div>
+                        <div class="side-mail">isabelaltara@gmail.com</div>
+                    </div>
+                </div>
+                <nav class="side-menu">
+                    <a class="side-item" href="configuracion.html">
+                        <i class="fa-solid fa-gear"></i><span>Configuración</span>
+                    </a>
+                    <a class="side-item" href="proyectos.html">
+                        <i class="fa-regular fa-folder"></i><span>Proyectos</span>
+                    </a>
+                    <a class="side-item" href="favoritos.html">
+                        <i class="fa-regular fa-heart"></i><span>Favoritos</span>
+                    </a>
+                </nav>
+                <div class="side-footer">
+                    <a class="side-logout" href="login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i><span>Cerrar Sesión</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="home-main">
+            <section class="home-section">
+                <h2 class="home-section-title">Chats</h2>
+            </section>
+            
+            
+            <section class="categories-carousel">
+                <div class="carousel-wrapper">
+                    <button class="scroll-btn left"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel">
+                        <div class="category active">Todos</div>
+                        <div class="category">Ilustrador</div>
+                        <div class="category">Diseñador UX/UI</div>
+                        <div class="category">Storyboarder</div>
+                        <div class="category">Animación 3D</div>
+                        <div class="category">Animación 2D</div>
+                        <div class="category">Modelado 3D</div>
+                    </div>
+                    <button class="scroll-btn right"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+
+            <section class="chats-group">
+
+                <article class="chats-card">
+                    <div class="chats-icon">
+                        <a href="ChatEjemplo.html">
+                        <img src="img/milton_sosa_redondo.png" alt="milton" height="50px">
+                        </a>
+                    </div>
+                    <div class="chats-info">
+                        <h4 class="chats-title">Milton Rosa</h4>
+                        <p class="chats-text">Ilustrador</p>
+                    </div>
+                </article>
+
+                <article class="chats-card">
+                    <div class="chats-icon">
+                        <img src="img/emilia.png" alt="emilia" height="50px">
+                    </div>
+                    <div class="chats-info">
+                        <h4 class="chats-title">Emilia Ramírez</h4>
+                        <p class="chats-text">Diseñador UX/UI</p>
+                    </div>
+                </article>
+
+                <article class="chats-card">
+                    <div class="chats-icon">
+                        <img src="img/sonia.png" alt="sonia" height="50px">
+                    </div>
+                    <div class="chats-info">
+                        <h4 class="chats-title">Sonia Soto</h4>
+                        <p class="chats-text">Animador 3D</p>
+                    </div>
+                </article>
+                
+                <article class="chats-card">
+                    <div class="chats-icon">
+                        <img src="img/karla.png" alt="karla" height="50px">
+                    </div>
+                    <div class="chats-info">
+                        <h4 class="chats-title">Karla Mejía</h4>
+                        <p class="chats-text">Storyboarder</p>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+
+        <nav class="home-bottom-nav">
+            <a href="home.html" class="bottom-nav-item active">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="proyectos.html" class="bottom-nav-item">
+                <i class="fa-regular fa-folder-open"></i>
+            </a>
+            <a href="chats.html" class="bottom-nav-item">
+                <i class="fa-regular fa-comment-dots"></i>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/pull-to-refresh.js"></script>
+    <script src="js/tabfuncional.js"></script>
+    <script src="js/sidebar.js" defer></script>
+    <script>
+        function goToProfile(){
+            window.location.replace("perfil.html")
+        }
+    </script>
+</body>
+
+</html>

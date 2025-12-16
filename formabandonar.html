@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>BeeU - Abandonar</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+</head>
+
+<body class="home-page">
+
+<div class="home-shell">
+
+    <!-- HEADER -->
+    <header class="home-header">
+        <div class="home-logo-badge">
+            <a href="#" class="sidebar-toggle-btn" id="sidebarToggle">
+                <img src="img/Logo.png" alt="BeeU" />
+            </a>
+        </div>
+        <div class="home-header-icon">
+            <a href="notificaciones.html"><i class="fa-regular fa-bell"></i></a>
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside id="mySidebar" class="side-drawer">
+        <div class="side-overlay" id="myOverlay"></div>
+        <div class="side-panel">
+            <div class="side-profile">
+                <div class="side-avatar">
+                    <img src="img/Foto_Perfil.png" alt="Avatar" />
+                </div>
+                <div class="side-user">
+                    <div class="side-name">Isabela Altara</div>
+                    <div class="side-mail">isabelaltara@gmail.com</div>
+                </div>
+            </div>
+
+            <nav class="side-menu">
+                <a class="side-item" href="configuracion.html">
+                    <i class="fa-solid fa-gear"></i><span>Configuración</span>
+                </a>
+                <a class="side-item" href="proyectos.html">
+                    <i class="fa-regular fa-folder"></i><span>Proyectos</span>
+                </a>
+                <a class="side-item" href="favoritos.html">
+                    <i class="fa-regular fa-heart"></i><span>Favoritos</span>
+                </a>
+            </nav>
+
+            <div class="side-footer">
+                <a class="side-logout" href="login.html">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i><span>Cerrar Sesión</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="abandonar-content">
+        <h1 class="abandonar-title">Abandonar proyecto</h1>
+
+        <p class="descripcion">
+            Tu salida notificará al creador del proyecto y se registrará en tu perfil como finalizada.
+        </p>
+
+        <label>Motivo de abandono</label>
+        <select class="form-control app-input">
+            <option>Selecciona una opción</option>
+        </select>
+
+        <p>Confirmación de estado del trabajo</p>
+        <label class="check-row">
+            <input type="checkbox">
+            <span>Subí los archivos que trabajé</span>
+        </label>
+        <label class="check-row">
+            <input type="checkbox">
+            <span>Avisé al equipo de mi salida</span>
+        </label>
+        <label class="check-row">
+            <input type="checkbox">
+            <span>No tengo entregas pendientes</span>
+        </label>
+
+        <p>¿Quieres dejar algún comentario o sugerencia?</p>
+        <textarea class="form-control" placeholder="Comenta tus motivos"></textarea>
+
+        <p>
+            Al abandonar este proyecto, dejarás de recibir notificaciones y ya no podrás editar o colaborar en su contenido.
+        </p>
+
+        <label class="check-row">
+            <input type="checkbox">
+            <span>Confirmo que deseo abandonar el proyecto y entiendo que no podré volver a editar su contenido.</span>
+        </label>
+
+        <button class="btn-abandonar" id="btnAbandonar">Abandonar proyecto</button>
+        <button class="btn-cancelar">Cancelar</button>
+    </main>
+
+    <!-- NAV INFERIOR -->
+    <nav class="home-bottom-nav">
+        <a href="home.html" class="bottom-nav-item active">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="proyectos.html" class="bottom-nav-item">
+            <i class="fa-regular fa-folder-open"></i>
+        </a>
+        <a href="chats.html" class="bottom-nav-item">
+            <i class="fa-regular fa-comment-dots"></i>
+        </a>
+    </nav>
+</div>
+
+<!-- MODAL -->
+<div class="modal-abandonar" id="modalAbandonar">
+    <div class="modal-box">
+        <h2>Abandonar proyecto</h2>
+        <p>¿Estás seguro de que quieres abandonar el proyecto?</p>
+
+        <div class="modal-actions">
+            <button class="btn-aceptar" id="btnAceptar">Aceptar</button>
+            <span class="modal-divider"></span>
+            <button class="btn-cancelar" id="cerrarModal">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="js/pull-to-refresh.js"></script>
+<script src="js/tabfuncional.js"></script>
+<script src="js/sidebar.js" defer></script>
+
+<script>
+// Referencias a elementos
+const modal = document.getElementById("modalAbandonar");
+const btnAbrir = document.getElementById("btnAbandonar"); // <-- aquí estaba el error
+const btnCerrar = document.getElementById("cerrarModal");
+const btnAceptar = document.getElementById("btnAceptar");
+
+// Abrir modal
+btnAbrir.addEventListener("click", () => {
+    modal.classList.add("active");
+});
+
+// Cerrar modal
+btnCerrar.addEventListener("click", () => {
+    modal.classList.remove("active");
+});
+
+// Clic fuera del modal
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("active");
+    }
+});
+
+// Aceptar → redirige
+btnAceptar.addEventListener("click", () => {
+    window.location.href = "Nosvemosenotro.html"; // tu página de destino
+});
+
+</script>
+
+</body>
+</html>

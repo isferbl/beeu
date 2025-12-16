@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<head>
+		<title>ChatRoom</title>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" type="text/css" href="css/ejChat.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+		
+	</head>
+
+<body>
+ <header class="chat-header">
+    <a href="javascript:history.back()">
+                <i class="fa-solid fa-arrow-left text-white"></i>
+            </a>
+        <div class="chat-avatar">
+            
+            <img src="img/milton_sosa_redondo.png" alt="Milton Rosa" class="userImg">
+        </div>
+        <h2 class="chat-name">Milton Rosa</h2>
+    </header>
+	
+	<section id="chat">
+<!--
+        <div class="container chatSpace">
+            <ul id="chatText">
+
+            </ul>
+        </div>
+-->
+        <div class="container chatSpace">
+            <div id="chatText">
+
+            </div>
+        </div>
+
+
+        <div class="container p-0">
+            <div class="row ms-1 me-1">
+                <form class="align-items-center p-0">
+                    <img src="img/Humberto_R.png" alt="userImg" class="userImg">
+                    <input type="text" name="tak" id="talk" aria-label="writingSpace" placeholder="Share something!">
+                    <a class="send" id="send"><i class="fa-solid fa-paper-plane"></i></a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/ejChat.js"></script>
+<script type="text/javascript" src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

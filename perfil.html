@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--copiar en todas las pantallas-->
+<head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>BeeU - Home</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+
+</head>
+
+<body class="home-page">
+
+    <div class="home-shell">
+        <!-- HEADER SUPERIOR, copiar en todas las pantallas -->
+            <header class="home-header">
+                <div class="home-logo-badge">
+                    <a href="#" class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Abrir menú lateral">
+                        <img src="img/Logo.png" alt="BeeU" />
+                    </a>
+                </div>
+        
+                <div class="home-header-icon" aria-label="Notificaciones">
+                    <a href="notificaciones.html"><i class="fa-regular fa-bell"></i></a>
+                </div>
+            </header>
+        
+            <aside id="mySidebar" class="side-drawer" aria-label="Menú lateral" aria-hidden="true">
+                <div class="side-overlay" id="myOverlay" aria-label="Cerrar menú"></div>
+        
+                <div class="side-panel">
+                    <div class="side-profile">
+                        <a href=""></a>
+                        <div class="side-avatar">
+                        <img src="img/Foto_Perfil.png" alt="Avatar" />
+                        </div>
+                        
+                        <div class="side-user">
+                            <div class="side-name">Isabela Altara</div>
+                            <div class="side-mail">isabelaltara@gmail.com</div>
+                        </div>
+                    </div>
+        
+                    <nav class="side-menu">
+                        <a class="side-item" href="configuracion.html">
+                            <i class="fa-solid fa-gear"></i><span>Configuración</span>
+                        </a>
+                    
+                        <a class="side-item" href="proyectos.html">
+                            <i class="fa-regular fa-folder"></i><span>Proyectos</span>
+                        </a>
+                    
+                        <a class="side-item" href="favoritos.html">
+                            <i class="fa-regular fa-heart"></i><span>Favoritos</span>
+                        </a>
+                    </nav>
+
+        
+                    <div class="side-footer">
+                        <a class="side-logout" href="login.html">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i><span>Cerrar Sesión</span>
+                        </a>
+					</div>
+                </div>
+            </aside>
+
+		
+		<main class="home-main perfil-main">
+			<section class="pull-to-refresh">
+    <div class="spinner-border" role="status">
+    </div>
+</section>
+			
+    <section class="perfil-banner">
+        <div class="perfil-banner-img">
+			<img src="img/Fondo_Milton_Rosa.png" alt="Banner">
+		</div>
+    </section>
+
+    <section class="home-section perfil-info-header">
+
+        <div class="perfil-avatar">
+            <div class="perfil-avatar-img">
+				<img src="img/milton_sosa_redondo.png" alt="Milton">
+			</div>
+        </div>
+
+        <h2 class="home-section-title" style="text-align: center; margin-top: 8px;">
+            Milton Rosa
+        </h2>
+
+        <p class="perfil-subtext">
+            Trabajo en una empresa de ilustraciones.
+        </p>
+
+        <div class="perfil-follow-wrapper">
+            <button class="perfil-follow-btn">
+                <i class="fa-solid fa-user-plus"></i> Seguir
+            </button>
+            <button class="perfil-share-btn">Compartir</button>
+        </div>
+
+        <div class="perfil-common-contact">
+            <i class="fa-solid fa-circle"></i>
+            <span>Sigue a <strong>contacto en común</strong></span>
+        </div>
+    </section>
+
+
+    <section class="perfil-tabs">
+        <button class="perfil-tab perfil-tab-active">Portafolio</button>
+        <button class="perfil-tab">Habilidades</button>
+        <button class="perfil-tab">Favoritos</button>
+    </section>
+
+
+<section class="home-section" style="padding: 0 16px;">
+    <div class="perfil-subheader">
+        <i class="fa-solid fa-folder-open"></i>
+        <span>Trabajos recientes</span>
+    </div>
+
+    <div class="perfil-grid">
+
+        <div class="perfil-item">
+            <img src="img/Portafolio_Milton_Rosa_1.png" alt="Trabajo 1">
+        </div>
+
+        <div class="perfil-item">
+            <img src="img/Portafolio_Milton_Rosa_2.png" alt="Trabajo 2">
+        </div>
+
+        <div class="perfil-item">
+            <img src="img/Portafolio_Milton_Rosa_3.png" alt="Trabajo 3">
+        </div>
+
+        <div class="perfil-item">
+            <img src="img/Portafolio_Milton_Rosa_4.png" alt="Trabajo 4">
+        </div>
+
+        <div class="perfil-item">
+            <img src="img/Portafolio_Milton_Rosa_5.png" alt="Trabajo 5">
+        </div>
+
+        <div class="perfil-item">
+            <img src="img/Portafolio_Milton_Rosa_1.png" alt="Trabajo 6">
+        </div>
+
+    </div>
+</section>
+
+
+</main>
+ <!-- NAV INFERIOR, copiar en todas las pantallas-->
+        <nav class="home-bottom-nav">
+            <a href="home.html" class="bottom-nav-item active">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="proyectos.html" class="bottom-nav-item">
+                <i class="fa-regular fa-folder-open"></i>
+            </a>
+            <a href="chats.html" class="bottom-nav-item">
+                <i class="fa-regular fa-comment-dots"></i>
+            </a>
+        </nav>
+    </div>
+
+    <!--copiar en todas las pantallas-->
+    <script src="js/pull-to-refresh.js"></script>
+    <script src="js/tabfuncional.js"></script>
+    <script src="js/sidebar.js" defer></script>
+    <script>
+        function goToProfile(){
+            window.location.replace("perfil.html")
+        }
+
+    </script>
+</body>
+
+</html>

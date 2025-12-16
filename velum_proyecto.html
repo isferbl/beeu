@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>BeeU - Velum</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/sidebar.css" /> 
+</head>
+
+<body class="home-page">
+
+    <div class="home-shell">
+        <header class="home-header">
+            <div class="home-logo-badge">
+                <a href="#" class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Abrir menú lateral">
+                    <img src="img/Logo.png" alt="BeeU" />
+                </a>
+            </div>
+
+            <div class="home-header-icon" aria-label="Notificaciones">
+                <a href="notificaciones.html"><i class="fa-regular fa-bell"></i></a>
+            </div>
+        </header>
+
+        <aside id="mySidebar" class="side-drawer" aria-label="Menú lateral" aria-hidden="true">
+            <div class="side-overlay" id="myOverlay" aria-label="Cerrar menú"></div>
+            <div class="side-panel">
+                <div class="side-profile">
+                    <a href="perfil1.html">
+                    <div class="side-avatar">
+                        <img src="img/Foto_Perfil.png" alt="Avatar" />
+                    </div>
+						</a> 
+                    <div class="side-user">
+                        <div class="side-name">Isabela Altara</div>
+                        <div class="side-mail">isabelaltara@gmail.com</div>
+                    </div>
+                </div>
+                <nav class="side-menu">
+                    <a class="side-item" href="configuracion.html">
+                        <i class="fa-solid fa-gear"></i><span>Configuración</span>
+                    </a>
+                    <a class="side-item" href="proyectos.html">
+                        <i class="fa-regular fa-folder"></i><span>Proyectos</span>
+                    </a>
+                    <a class="side-item" href="favoritos.html">
+                        <i class="fa-regular fa-heart"></i><span>Favoritos</span>
+                    </a>
+                </nav>
+                <div class="side-footer">
+                    <a class="side-logout" href="login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i><span>Cerrar Sesión</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        
+        <main class="home-main" style="flex-grow: 1; overflow-y: auto; padding-top: 50px; padding-bottom: 60px; background-color: #f5f5f5;">
+            
+            <section class="pull-to-refresh" style="padding-top: 10px;">
+                <div class="spinner-border" role="status">
+                </div>
+            </section>
+            
+            <div class="project-title d-flex align-items-center mb-3 pt-2" style="padding-left: 15px; padding-right: 15px;">
+                <a href="votacion.html"><i class="fa-solid fa-chevron-left me-3"></i></a>
+                <h1 class="m-0">Velum</h1>
+            </div>
+            
+            <section class="row project-card-info mb-4" style="padding: 0 15px;">
+                <article align="center" style="width: 100%;">
+                    <img src="img/Velum_Grande.png" alt="velum" width="320" class="pb-2 img-fluid" style="max-width: 100%;">
+                    
+                    <div class="row align-items-center pt-2">
+                        <article class="rating col-6 text-start">
+                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                            <i class="fa-regular fa-star" style="color: gold;"></i>
+                            <i class="fa-regular fa-star" style="color: gold;"></i>
+                        </article>
+                        
+                        <article class="col-6 text-end">
+                            <p class="m-0">40/100</p>
+                        </article>
+                    </div>
+                    <p align="left" class="mt-2">Velum, que significa "velo" en latín, es un corto sobre un niño curioso que vive en una ciudad flotante envuelta en nubes perpetuas. Intrigado por los relatos antiguos de un mundo por debajo del "velo", decide construir una máquina voladora para descender y descubrir qué hay más allá de las nubes. Su viaje lo lleva a un mundo lleno de maravillas olvidadas y misterios por resolver.</p>
+                </article>
+            </section>
+            
+
+            <section class="home-section" style="padding: 0 16px;">
+                <h2 class="home-section-title" align="center">Comentarios</h2>
+            </section>
+
+            <section class="home-section comment-section mb-4" style="padding: 0 16px;">
+
+                <article style="margin-top: 16px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <i class="fa-solid fa-circle-user fa-lg" style="color: #8a2be2;"></i>
+                        </div>
+                        <div class="col">
+                            <h4 style="margin: 0; font-size: 16px; color: #333; font-weight: 700;">Milton Rosa</h4>
+                        </div>
+                    </div>
+                    <p style="margin: 4px 0 0 30px; color: #555;">Excelente proyecto, muy bien organizado.</p>
+                </article>
+
+                <article style="margin-top: 16px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <i class="fa-solid fa-circle-user fa-lg" style="color: #8a2be2;"></i>
+                        </div>
+                        <div class="col">
+                            <h4 style="margin: 0; font-size: 16px; color: #333; font-weight: 700;">Emilia Sánchez</h4>
+                        </div>
+                    </div>
+                    <p style="margin: 4px 0 0 30px; color: #555;">Buen ambiente de trabajo y comunicación clara.</p>
+                </article>
+
+            </section>
+
+            <hr class="horizontal-rule" style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+
+            <section class="home-section" style="padding: 0 16px;">
+                <h2 class="home-section-title" align="center" style="margin-bottom: 15px;">Califica el proyecto</h2>
+
+                <div id="ratingStars" style="font-size: 26px; color: #8a2be2; margin-bottom: 12px; cursor: pointer;" align="center">
+                    <i class="fa-regular fa-star" data-value="1"></i>
+                    <i class="fa-regular fa-star" data-value="2"></i>
+                    <i class="fa-regular fa-star" data-value="3"></i>
+                    <i class="fa-regular fa-star" data-value="4"></i>
+                    <i class="fa-regular fa-star" data-value="5"></i>
+                </div>
+
+                <div class="mb-3">
+                    <label class="section-label" style="font-weight: bold; margin-bottom: 5px; display: block;">Comentario</label>
+                    <textarea 
+                        id="reviewComment"
+                        class="form-control app-input project-description-textarea"
+                        placeholder="Escribe tu comentario…"
+                        style="width: 100%; min-height: 100px; border: 1px solid #ccc; border-radius: 8px;"
+                        required
+                    ></textarea>
+                </div>
+
+                <button 
+                    id="saveReviewBtn"
+                    class="btn-save btn btn-primary"
+                    style="width: 100%; margin-top: 10px; margin-bottom: 20px; background-color: #8a2be2; border-color: #8a2be2;"
+                > Deja tu reseña
+                </button>
+            </section>
+            
+            <div style="height: 10px;"></div> </main>
+        
+<!-- NAV INFERIOR, copiar en todas las pantallas-->
+        <nav class="home-bottom-nav">
+            <a href="home.html" class="bottom-nav-item active">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="proyectos.html" class="bottom-nav-item">
+                <i class="fa-regular fa-folder-open"></i>
+            </a>
+            <a href="chats.html" class="bottom-nav-item">
+                <i class="fa-regular fa-comment-dots"></i>
+            </a>
+        </nav>
+    </div>
+
+    <!--copiar en todas las pantallas-->
+    <script src="js/pull-to-refresh.js"></script>
+    <script src="js/tabfuncional.js"></script>
+    <script src="js/sidebar.js" defer></script>
+    <script>
+        function goToProfile(){
+            window.location.replace("perfil.html")
+        }
+
+    </script>
+	<script>
+        const stars = document.querySelectorAll("#ratingStars i");
+        let selectedRating = 0;
+
+        stars.forEach(star => {
+            // Hover: iluminar
+            star.addEventListener("mouseover", () => {
+                resetStars();
+                for (let i = 0; i < star.dataset.value; i++) {
+                    stars[i].classList.replace("fa-regular", "fa-solid");
+                }
+            });
+
+            // Click: seleccionar rating
+            star.addEventListener("click", () => {
+                selectedRating = star.dataset.value;
+            });
+
+            // Al salir del área: mostrar solo el rating guardado
+            star.addEventListener("mouseout", () => {
+                resetStars();
+                if (selectedRating > 0) {
+                    for (let i = 0; i < selectedRating; i++) {
+                        stars[i].classList.replace("fa-regular", "fa-solid");
+                    }
+                }
+            });
+        });
+
+        function resetStars() {
+            stars.forEach(s => s.classList.replace("fa-solid", "fa-regular"));
+        }
+
+        // Botón guardar
+        document.getElementById("saveReviewBtn").addEventListener("click", () => {
+            const comment = document.getElementById("reviewComment").value;
+
+            if (selectedRating == 0) {
+                alert("Por favor selecciona una calificación.");
+                return;
+            }
+            if (comment.trim() === "") {
+                alert("El comentario no puede estar vacío.");
+                return;
+            }
+
+            alert("¡Reseña guardada con éxito!");
+        });
+    </script>
+</body>
+
+</html>
